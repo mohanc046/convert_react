@@ -29,20 +29,20 @@ export const Testimonial = () => {
     ])
 
     return (
-        <div class="feedback-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="feedback_main">
+        <div className="feedback-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="feedback_main">
                             <h3>Testimonial</h3>
                             <h1>We Are Very Happy To Get Our Client’s Feedback</h1>
-                            <div class="customer_carousel owl-carousel owl-theme">
+                            <div className="customer_carousel owl-carousel owl-theme">
                                 {testimonial.map(item => {
                                     const { feedback, profileImg, ratingImg, name, designation } = item || {};
-                                    return (<div class="customer_feedback_block">
-                                        <div class="box slide">
+                                    return (<div className="customer_feedback_block">
+                                        <div className="box slide">
                                             <p>{feedback}</p>
-                                            <h3><img src={profileImg} /><span> <img class="right" src={ratingImg} /></span></h3>
+                                            <h3><img src={profileImg} /><span> <img className="right" src={ratingImg} /></span></h3>
                                             <h4>{name}</h4>
                                             <h5>{designation}</h5>
                                         </div>

@@ -7,10 +7,10 @@ import dogecoin from '../../images/dogecoin.png'
 
 export const WeAccept = () => {
     return (
-        <div class="accept-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div className="accept-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h1>We Accept</h1>
                         <ul>
                             <li><img src={perfect} /></li>

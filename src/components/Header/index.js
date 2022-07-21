@@ -15,18 +15,18 @@ export const Header = () => {
     return (
         <>
 
-            <div class="top-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="top_box">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="top_left">
+            <div className="top-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div className="top_box">
+                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div className="top_left">
                                         <img src={logo} />
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="top_right">
+                                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div className="top_right">
                                         <ul>
                                             <li><a href="https://www.instagram.com/?hl=en"><img src={instagram} /></a></li>
                                             <li><a href="https://telegram.org/"><img src={telegram} /></a></li>
@@ -41,21 +41,21 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div class="header-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="header-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <header>
-                                <nav class="navbar navbar-inverse">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
+                                <nav className="navbar navbar-inverse">
+                                    <div className="navbar-header">
+                                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
                                         </button>
                                     </div>
-                                    <div class="collapse navbar-collapse" id="myNavbar">
-                                        <ul class="nav navbar-nav navbar-right">
+                                    <div className="collapse navbar-collapse" id="myNavbar">
+                                        <ul className="nav navbar-nav navbar-right">
                                             <li><a href="?a=home"><img src={home} />HOME</a></li>
                                             <li><a href="?a=aboutus"><img src={about_us} />ABOUT US</a></li>
                                             <li><a href="?a=faq"><img src={features} />FEATURES</a></li>
@@ -66,12 +66,12 @@ export const Header = () => {
                                     </div>
                                 </nav>
                             </header>
-                            <div class="header_main">
+                            <div className="header_main">
                                 <h2>Welcome to procoin</h2>
                                 <h1>NEW GENERATION <br /><span>TO EVERYONE</span></h1>
                                 <h3><img src={line} />INVESTMENT PLATFORM</h3>
                                 <p>Our Team Specializes In Investing In The Most Relevant Investment Instruments.</p>
-                                <div class="header_btn">
+                                <div className="header_btn">
                                     <ul>
                                         <li><a>Get Started</a></li>
                                         <li><a>Contact Us</a></li>

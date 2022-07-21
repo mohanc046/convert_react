@@ -13,35 +13,35 @@ import investing from '../../images/investing.png'
 
 export const Analytics = () => {
     return (
-        <div class="live-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="live_main">
+        <div className="live-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="live_main">
                             <ul>
                                 <li>
-                                    <div class="live_box">
+                                    <div className="live_box">
                                         <img src={running_days} />
                                         <h1>78</h1>
                                         <p>Running Days</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="live_box">
+                                    <div className="live_box">
                                         <img src={total_members} />
                                         <h1>3142</h1>
                                         <p>Total Members</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="live_box">
+                                    <div className="live_box">
                                         <img src={total_deposit} />
                                         <h1>1292</h1>
                                         <p>Total Deposit</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="live_box">
+                                    <div className="live_box">
                                         <img src={tot_withdrawal} />
                                         <h1>322</h1>
                                         <p>Total Withdrawal</p>
@@ -50,44 +50,44 @@ export const Analytics = () => {
                             </ul>
                             <h3>checkout</h3>
                             <h2>WHY CHOOSE US</h2>
-                            <div class="choose">
+                            <div className="choose">
                                 <ul>
                                     <li>
-                                        <div class="one">
+                                        <div className="one">
                                             <img src={twentyfour} />
                                             <h4>24/7 SUPPORT</h4>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="up_img">
+                                        <div className="up_img">
                                             <img src={up} />
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="two">
+                                        <div className="two">
                                             <img src={daily} />
                                             <h4>DAILY PROFIT</h4>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="down_img">
+                                        <div className="down_img">
                                             <img src={down} />
                                         </div>
                                     </li>
 
                                     <li>
-                                        <div class="one">
+                                        <div className="one">
                                             <img src={deposit} />
                                             <h4>DEPOSIT<br />PROTECTION</h4>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="up_img">
+                                        <div className="up_img">
                                             <img src={up} />
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="two">
+                                        <div className="two">
                                             <img src={investing} />
                                             <h4>INVESTING WITH<br />BODERS</h4>
                                         </div>

@@ -9,18 +9,18 @@ export const Footer = () => {
     return (
         <>
 
-            <div class="footer-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <div class="first">
+            <div className="footer-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div className="first">
                                     <a href="#"><img src={logo} /></a>
                                     <p>Reference site about Lorem Ipsum, giving information</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <div class="second">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div className="second">
                                     <h1>LINKS:</h1>
                                     <img src={underline} />
                                     <ul>
@@ -33,8 +33,8 @@ export const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <div class="third">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div className="third">
                                     <h1>ADDRESS:</h1>
                                     <img src={underline} />
                                     <p>64 Victoria Street, London,<br />SW1E 6QP, United Kingdom</p>
@@ -50,10 +50,10 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div class="last-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div className="last-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <h1>2022 Procoin Limited</h1>
                         </div>
                     </div>

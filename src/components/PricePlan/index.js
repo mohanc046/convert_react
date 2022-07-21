@@ -223,20 +223,20 @@ export const PricePlan = () => {
     }
 
     return (
-        <div class="plan-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="plan_main">
+        <div className="plan-bg">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="plan_main">
                             <h1>Choose&nbsp;<span>Pricing Plans&nbsp;</span>Which <br />Suits Your Needs.</h1>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="plan_left"> tabcontent
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div className="plan_left"> tabcontent
                                     {totalPlan.map((item, index) => {
                                         const { title = "", totalDays = "", plans = [] } = item || {};
-                                        return <div id={`${title}${index}`} class={isActive(index) ? "active" : "tabcontent"}>
+                                        return <div id={`${title}${index}`} className={isActive(index) ? "active" : "tabcontent"}>
                                             <h4>{title}</h4>
                                             <h1>{totalDays}<span>Daily</span></h1>
-                                            {plans.map(individualPlan => <div class="plan_head">
+                                            {plans.map(individualPlan => <div className="plan_head">
                                                 <img src={individualPlan.img} />
                                                 <p>{individualPlan.title}:<span>{individualPlan.value}</span></p>
                                             </div>
@@ -245,16 +245,16 @@ export const PricePlan = () => {
                                     })}
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="plan_right">
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div className="plan_right">
                                     <h1>Select your  Investment Plan</h1>
-                                    <div class="tab">
+                                    <div className="tab">
                                         <ul>
                                             {totalPlan.map((item, index) => {
                                                 return (
                                                     <li>
                                                         <a
-                                                            class={isActive(index) ? "tablinks active" : "tablinks"}
+                                                            className={isActive(index) ? "tablinks active" : "tablinks"}
                                                             onClick={() => setActivePlan(index)}
                                                             id={item.title}>
                                                             {item.title}
@@ -264,7 +264,7 @@ export const PricePlan = () => {
                                             })}
                                         </ul>
                                     </div>
-                                    <div class="plan_btn">
+                                    <div className="plan_btn">
                                         <a>Invest Now</a>
                                     </div>
                                 </div>
