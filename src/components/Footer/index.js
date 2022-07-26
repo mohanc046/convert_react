@@ -4,11 +4,27 @@ import underline from '../../images/underline.png'
 import twitter from '../../images/twitter.png'
 import tele from '../../images/tele.png'
 import faceb from '../../images/faceb.png'
+import { useState } from 'react'
 
 export const Footer = () => {
+
+    const [redirectionConfig, setRedirectionConfig] = useState([
+        {
+            imageURL : twitter,
+            redirectionURL : "https://twitter.com/"
+        },
+        {
+            imageURL : tele,
+            redirectionURL : "https://telegram.org/"
+        },
+        {
+            imageURL : faceb,
+            redirectionURL : "https://www.facebook.com/"
+        }
+    ])
+
     return (
         <>
-
             <div className="footer-bg">
                 <div className="container">
                     <div className="row">
@@ -39,9 +55,13 @@ export const Footer = () => {
                                     <img src={underline} />
                                     <p>64 Victoria Street, London,<br />SW1E 6QP, United Kingdom</p>
                                     <ul>
-                                        <li><a href="https://twitter.com/" target="_blank"><img src={twitter} /></a></li>
-                                        <li><a href="https://telegram.org/" target="_blank"><img src={tele} /></a></li>
-                                        <li><a href="https://www.facebook.com/" target="_blank"><img src={faceb} /></a></li>
+                                        {redirectionConfig.map(item =>
+                                            <li>
+                                                <a href={item.redirectionURL} target="_blank">
+                                                    <img src={item.imageURL} />
+                                                </a>
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </div>

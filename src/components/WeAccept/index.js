@@ -6,6 +6,9 @@ import dogecoin from '../../images/dogecoin.png'
 
 
 export const WeAccept = () => {
+
+    const listOfCurrencyWeAccept = [perfect, ethereum, bitcoin, litecoin, dogecoin]
+
     return (
         <div className="accept-bg">
             <div className="container">
@@ -13,11 +16,7 @@ export const WeAccept = () => {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h1>We Accept</h1>
                         <ul>
-                            <li><img src={perfect} /></li>
-                            <li><img src={ethereum} /></li>
-                            <li><img src={bitcoin} /></li>
-                            <li><img src={litecoin} /></li>
-                            <li><img src={dogecoin} /></li>
+                            {listOfCurrencyWeAccept.map(item => <li><img src={item} /></li>)}
                         </ul>
                     </div>
                 </div>

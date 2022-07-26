@@ -230,7 +230,7 @@ export const PricePlan = () => {
                         <div className="plan_main">
                             <h1>Choose&nbsp;<span>Pricing Plans&nbsp;</span>Which <br />Suits Your Needs.</h1>
                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div className="plan_left"> tabcontent
+                                <div className="plan_left">
                                     {totalPlan.map((item, index) => {
                                         const { title = "", totalDays = "", plans = [] } = item || {};
                                         return <div id={`${title}${index}`} className={isActive(index) ? "active" : "tabcontent"}>
